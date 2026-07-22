@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stakeholder Briefing · UM6P Language Center — Performance Dashboard 2025/2026</title>
+<title>UM6P Language Center — Performance Dashboard 2025/2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -167,7 +167,7 @@ section.block{padding:52px 0; border-top:1px solid var(--line)}
 @media(max-width:820px){ .pt-grid{grid-template-columns:1fr} }
 
 /* ---------- Cohort strip ---------- */
-.cohort{display:grid; grid-template-columns:1.6fr 1fr; gap:0; background:var(--ink); border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow-lg)}
+.cohort{display:grid; grid-template-columns:1.6fr 1fr 1fr; gap:0; background:var(--ink); border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow-lg)}
 .cohort .c{padding:24px 26px; border-right:1px solid rgba(255,255,255,.08)}
 .cohort .c:last-child{border-right:none}
 .cohort .lead{background:linear-gradient(135deg,var(--brand),var(--brand-deep))}
@@ -258,19 +258,6 @@ table.data tr:hover td{background:var(--surface-2)}
   border:1px solid var(--line); background:var(--surface-2); box-shadow:var(--shadow)}
 .tl-poster img{display:block; width:100%; height:auto}
 @media(max-width:640px){ .tl-poster{flex-basis:64px; width:64px} }
-
-
-/* ---------- Circular gauges ---------- */
-.card-rings{display:flex; flex-direction:column}
-.rings{flex:1 1 auto; display:flex; flex-direction:column; gap:18px;
-  justify-content:center; align-items:center; padding:14px 0}
-.ring{width:100%; max-width:260px; text-align:center; background:var(--surface-2);
-  border:1px solid var(--line); border-radius:14px; padding:20px 16px 18px}
-.ring svg{display:block; margin:0 auto 12px}
-.ring .rv{font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:25px; fill:var(--ink)}
-.ring .rl{font-size:13px; font-weight:600; color:var(--ink-2); margin-bottom:4px}
-.ring .rs{font-size:11.5px; color:var(--slate); line-height:1.35}
-@media(max-width:820px){ .rings{flex-direction:row; flex-wrap:wrap} }
 
 /* ---------- Partner logo tiles ---------- */
 .lg-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(126px,1fr)); gap:10px; margin-top:6px}
@@ -444,8 +431,8 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
       <img class="brand-logo" src="data:image/png;base64,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" alt="UM6P Language Center">
       <span class="brand-divider"></span>
       <div class="brand-txt">
-        <b>Executive Briefing</b>
-        <span>Language Center · AY 2025/2026</span>
+        <b>Performance Dashboard</b>
+        <span>Strategic Academic Portal · 2025/2026</span>
       </div>
     </div>
     <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation"><span></span></button>
@@ -466,7 +453,7 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
 <div class="hero" id="overview">
   <div class="hero-ticks"></div>
   <div class="wrap hero-inner">
-    <div class="eyebrow">Executive Briefing · University Leadership</div>
+    <div class="eyebrow">Strategic Academic Performance Portal</div>
     <h1>From support function <span class="accent">to strategic capability.</span></h1>
     <p class="hero-sub">Every UM6P student must certify at B2 or above to graduate — which makes language provision a dependency, not a service. This is the year in full: <b>2,965 learners</b> across six languages and two campuses, <b>11,530 teaching hours</b> delivered, a <b>92% certification success rate</b>, and a <b>30+ partner</b> network. It also shows where that capability is under strain, and what it needs to go further.</p>
     <div class="hero-meta">
@@ -476,7 +463,7 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
     <div class="kpi-band" id="kpiBand">
       <div class="kpi reveal"><div class="num" data-count="2965">2,965</div><div class="lbl">Learners served</div></div>
       <div class="kpi reveal"><div class="num" data-count="85" data-suffix="%">85%</div><div class="lbl">Learner satisfaction</div></div>
-      <div class="kpi reveal"><div class="num" data-count="90.3" data-dec="1" data-suffix="%">90.3%</div><div class="lbl">Certification success</div></div>
+      <div class="kpi reveal"><div class="num" data-count="92" data-suffix="%">92%</div><div class="lbl">Certification success</div></div>
       <div class="kpi reveal"><div class="num" data-count="11530" data-suffix="h">11,530h</div><div class="lbl">Hours delivered</div></div>
       <div class="kpi reveal"><div class="num" data-count="6">6</div><div class="lbl">Languages taught</div></div>
       <div class="kpi reveal"><div class="num" data-count="30" data-suffix="+">30+</div><div class="lbl">Partnerships</div></div>
@@ -515,14 +502,26 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
       </div>
       <div class="c">
         <div class="num"><span data-count="435">435</span></div>
-        <div class="lbl">Graduating students tracked for certification<br><span class="mono" style="opacity:.8; font-size:12px">355 have sat their English test · 149 of the 301 who also need French</span></div>
+        <div class="lbl">Graduating students tracked for certification</div>
+      </div>
+      <div class="c">
+        <div class="num" style="color:#FFC9A8"><span data-count="48.5" data-dec="1">48.5</span>%</div>
+        <div class="lbl"><b>211 students currently at risk</b> — 48.5% of the graduating cohort still need a passing test</div>
       </div>
     </div>
 
-    <div class="insights" style="grid-template-columns:1fr">
+    <div class="insights">
       <div class="insight win reveal">
         <div class="ih"><span class="k">Strength</span> Certification quality is high</div>
         <p>Among students who sat the test, <b>86% passed English at B2+</b> and <b>100% passed French</b>. TOEIC and IELTS results skew strongly toward C1.</p>
+      </div>
+      <div class="insight watch reveal">
+        <div class="ih"><span class="k">Watch</span> French participation lags English</div>
+        <p>Only <b>49% of French-eligible students</b> have taken their test, versus <b>82% for English</b>. The gap is participation, not ability — everyone who sat French passed.</p>
+      </div>
+      <div class="insight risk reveal">
+        <div class="ih"><span class="k">Attention</span> Risk is concentrated</div>
+        <p><b>ISSB-P, SCI and IADT</b> carry the highest at-risk shares (95–100%), driven mostly by students who have not yet taken a required test.</p>
       </div>
     </div>
   </div>
@@ -545,6 +544,7 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
       <div class="lang-panel eng reveal">
         <div class="ph"><span class="flag">🇬🇧</span><h3>English certification</h3><span class="cnt mono">435 required</span></div>
         <div class="lp-metrics">
+          <div class="lp-metric"><div class="v"><span data-count="81.6" data-dec="1">81.6</span>%</div><div class="k">Participation rate · 355 of 435 tested</div></div>
           <div class="lp-metric"><div class="v"><span data-count="86.2" data-dec="1">86.2</span>%</div><div class="k">Pass rate · 306 met B2+ of those tested</div></div>
         </div>
         <div class="lp-bar">
@@ -560,6 +560,7 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
       <div class="lang-panel fre reveal">
         <div class="ph"><span class="flag">🇫🇷</span><h3>French certification</h3><span class="cnt mono">301 required</span></div>
         <div class="lp-metrics">
+          <div class="lp-metric"><div class="v"><span data-count="49.5" data-dec="1">49.5</span>%</div><div class="k">Participation rate · 149 of 301 tested</div></div>
           <div class="lp-metric"><div class="v"><span data-count="100">100</span>%</div><div class="k">Pass rate · all 149 met B2+ (DELF/DALF)</div></div>
         </div>
         <div class="lp-bar">
@@ -612,10 +613,25 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
     </div>
 
     <!-- By department table -->
-    
+    <div class="grid grid-auto dept-tables">
+      <div class="card reveal">
+        <div class="card-h"><h3>English results by department</h3><span class="tag en">Pass = B2+</span></div>
+        <div class="sub">Pass rate is of students who tested. A low participation rate flags graduation risk.</div>
+        <div class="tbl-wrap"><table class="data" id="tblEn"></table></div>
+      </div>
+      <div class="card reveal">
+        <div class="card-h"><h3>French results by department</h3><span class="tag fr">Pass = B2+</span></div>
+        <div class="sub">Departments with no French requirement are omitted. Everyone who tested passed.</div>
+        <div class="tbl-wrap"><table class="data" id="tblFr"></table></div>
+      </div>
+    </div>
 
     <!-- Risk by department -->
-    
+    <div class="card reveal pad-lg" style="margin-top:18px">
+      <div class="card-h"><h3>Graduation risk by department</h3><span class="aside mono">211 unique students at risk · 48.5% of cohort</span></div>
+      <div class="sub">At risk is split into its <b>two causes</b>: <b>Test not taken (TNT)</b> — a required exam has simply never been sat — and <b>Below B2 requirement</b> — the student tested but did not reach the graduation bar. Bars count at-risk cases across both languages, so a student short in English <i>and</i> French appears once per language. <b>TNT dominates by far</b> (232 of 281 cases), which is why participation, not ability, is the lever.</div>
+      <div class="chart-box" style="height:340px"><canvas id="chRisk"></canvas></div>
+    </div>
   </div>
 </section>
 
@@ -644,32 +660,20 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
         <div class="sub">Percentage of planned sessions actually delivered. Most departments run at or near 100%.</div>
         <div class="chart-box" style="height:520px"><canvas id="chDeptDelivery"></canvas></div>
       </div>
-      <div class="card reveal card-rings">
-        <div class="card-h"><h3>Attendance &amp; satisfaction</h3></div>
-        <div class="sub">Two signals of how consistently the Center reaches its learners, and how they rate the experience.</div>
-        <div class="rings">
-          <div class="ring">
-          <svg width="132" height="132" viewBox="0 0 132 132" role="img" aria-label="Attendance recorded 87.3%">
-            <circle cx="66" cy="66" r="54" fill="none" stroke="var(--line)" stroke-width="13"/>
-            <circle cx="66" cy="66" r="54" fill="none" stroke="var(--en)" stroke-width="13" stroke-linecap="round"
-                    stroke-dasharray="296.2 43.1" transform="rotate(-90 66 66)"/>
-            <text x="66" y="72" text-anchor="middle" class="rv">87.3%</text>
-          </svg>
-          <div class="rl">Attendance recorded</div>
-          <div class="rs">1,842 of 2,109 sessions</div>
-        </div>
-          <div class="ring">
-          <svg width="132" height="132" viewBox="0 0 132 132" role="img" aria-label="Learner satisfaction 85%">
-            <circle cx="66" cy="66" r="54" fill="none" stroke="var(--line)" stroke-width="13"/>
-            <circle cx="66" cy="66" r="54" fill="none" stroke="var(--good)" stroke-width="13" stroke-linecap="round"
-                    stroke-dasharray="288.4 50.9" transform="rotate(-90 66 66)"/>
-            <text x="66" y="72" text-anchor="middle" class="rv">85%</text>
-          </svg>
-          <div class="rl">Learner satisfaction</div>
-          <div class="rs">Across academic &amp; corporate learners</div>
-        </div>
-        </div>
+      <div class="card reveal pad-lg">
+      <div class="card-h"><h3>Attendance &amp; satisfaction</h3></div>
+      <div class="sub">Two signals of how consistently the Center reaches its learners, and how they rate the experience.</div>
+      <div class="wf-m" style="margin-top:14px">
+        <div class="wm-v" style="color:var(--en)">87.3%</div>
+        <div class="wm-b"><div class="wm-l">Attendance recorded · 1,842 of 2,109 sessions</div>
+          <div class="wm-t"><i style="width:87.3%; background:var(--en)"></i></div></div>
       </div>
+      <div class="wf-m">
+        <div class="wm-v" style="color:var(--good)">85%</div>
+        <div class="wm-b"><div class="wm-l">Learner satisfaction</div>
+          <div class="wm-t"><i style="width:85%; background:var(--good)"></i></div></div>
+      </div>
+    </div>
     </div>
 
     <div class="card reveal pad-lg" style="margin-bottom:18px">
@@ -703,12 +707,10 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
       </div>
     </div>
 
-    
-
-    <div class="insights" style="grid-template-columns:1fr">
+    <div class="insights">
       <div class="insight win reveal"><div class="ih"><span class="k">Strong</span> Reliable teaching</div><p>Delivery held above <b>96%</b> even through the Ramadan schedule, with several departments (EMINES, SHBM, SCI) exceeding planned hours.</p></div>
-      
-      
+      <div class="insight watch reveal"><div class="ih"><span class="k">Watch</span> Attendance dips in two departments</div><p><b>EMINES (55%&nbsp;&rarr;&nbsp;57%)</b> and <b>GTI (61%&nbsp;&rarr;&nbsp;63%)</b> recorded notably low attendance across March&ndash;April and are being actively monitored.</p></div>
+      <div class="insight risk reveal"><div class="ih"><span class="k">Action</span> Lift book activation</div><p>E-book activation stands at <b>73%</b> (766 / 1,051). <b>Action item: reach at least 80&ndash;85% next academic year</b> to unlock the full digital toolkit for every group.</p></div>
     </div>
   </div>
 </section>
@@ -738,7 +740,34 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
       </div>
     </div>
 
-    
+    <div class="card reveal pad-lg">
+      <div class="card-h"><h3>Course portfolio &amp; languages offered</h3></div>
+      <div class="sub">The full menu of what the Center delivers to UM6P schools and departments.</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:26px" class="port-grid">
+        <div>
+          <div class="eyebrow" style="color:var(--slate)">Course families</div>
+          <div class="chips">
+            <span class="chip"><span class="sw" style="background:var(--violet)"></span>General Language Proficiency</span>
+            <span class="chip"><span class="sw" style="background:var(--brand)"></span>Business &amp; Professional Communication</span>
+            <span class="chip"><span class="sw" style="background:var(--en)"></span>Professional Skills Development</span>
+            <span class="chip"><span class="sw" style="background:var(--amber)"></span>Vocational Language Training</span>
+            <span class="chip"><span class="sw" style="background:var(--teal)"></span>Academic &amp; Project-Based Learning</span>
+            <span class="chip"><span class="sw" style="background:var(--rose)"></span>Test Preparation</span>
+          </div>
+        </div>
+        <div>
+          <div class="eyebrow" style="color:var(--slate)">Languages offered</div>
+          <div class="chips">
+            <span class="chip">🇫🇷 French</span>
+            <span class="chip">🇬🇧 English</span>
+            <span class="chip">🇸🇦 Arabic</span>
+            <span class="chip">🇪🇸 Spanish</span>
+            <span class="chip">🇨🇳 Mandarin</span>
+            <span class="chip">🇹🇿 Swahili</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -780,7 +809,71 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
       </div>
     </div>
 
-    
+    <div class="card reveal pad-lg" style="margin-top:18px">
+      <div class="card-h"><h3>Workforce, teaching quality &amp; development</h3></div>
+      <div class="sub">Contract mix, quality assurance, and the professional-development programme behind the team — with the numbers, not just the labels.</div>
+      <div class="wf">
+
+        <div class="wf-col">
+          <div class="eyebrow" style="color:var(--slate)">Workforce composition</div>
+          <div class="wf-split">
+            <div class="wf-seg"><div class="n">9</div><div class="l">Full-time · UM6P</div></div>
+            <div class="wf-seg"><div class="n">61</div><div class="l">Part-time</div></div>
+          </div>
+          <div class="wf-stack">
+            <i style="width:12.9%; background:var(--en)"></i>
+            <i style="width:87.1%; background:var(--brand)"></i>
+          </div>
+          <div class="wf-legend">
+            <span><i style="background:var(--en)"></i>Full-time · 13%</span>
+            <span><i style="background:var(--brand)"></i>Part-time · 87%</span>
+          </div>
+          <div class="pt-foot" style="margin-top:11px">70 instructors on the books · <b>63 active</b> this year. Part-time combines 48 part-time faculty and 13 expert vacataires — the flexibility that lets the Center scale without fixed cost.</div>
+        </div>
+
+        <div class="wf-col">
+          <div class="eyebrow" style="color:var(--slate)">Teaching quality</div>
+          <div class="wf-m">
+            <div class="wm-v" style="color:var(--good)">92%</div>
+            <div class="wm-b"><div class="wm-l">Meeting quality standards</div>
+              <div class="wm-t"><i style="width:92%; background:var(--good)"></i></div></div>
+          </div>
+          <div class="wf-m">
+            <div class="wm-v" style="color:var(--en)">96.4%</div>
+            <div class="wm-b"><div class="wm-l">Class delivery rate · 2,298 sessions</div>
+              <div class="wm-t"><i style="width:96.4%; background:var(--en)"></i></div></div>
+          </div>
+          <div class="wf-m">
+            <div class="wm-v" style="color:var(--good)">10%</div>
+            <div class="wm-b"><div class="wm-l">Turnover · low &amp; stable</div>
+              <div class="wm-t"><i style="width:10%; background:var(--good)"></i></div></div>
+          </div>
+          <div class="wf-split" style="margin:14px 0 0">
+            <div class="wf-seg"><div class="n">27</div><div class="l">Class observations</div></div>
+            <div class="wf-seg"><div class="n">36</div><div class="l">Students / teacher</div></div>
+          </div>
+        </div>
+
+        <div class="wf-col">
+          <div class="eyebrow" style="color:var(--slate)">Professional development</div>
+          <div class="wf-m">
+            <div class="wm-v" style="color:var(--teal)">75%</div>
+            <div class="wm-b"><div class="wm-l">Training satisfaction</div>
+              <div class="wm-t"><i style="width:75%; background:var(--teal)"></i></div></div>
+          </div>
+          <div class="wf-split" style="margin:0 0 14px">
+            <div class="wf-seg"><div class="n">10+</div><div class="l">Trainings delivered</div></div>
+            <div class="wf-seg"><div class="n">27</div><div class="l">Class observations</div></div>
+          </div>
+          <div class="chips">
+            <span class="chip">Certification</span><span class="chip">Webinars</span>
+            <span class="chip">Workshops</span><span class="chip">Conferences</span>
+          </div>
+          <div class="pt-foot" style="margin-top:11px">Average teaching load <b>4&ndash;14h / week</b>, leaving room for development and the in-house platform work.</div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
 
@@ -809,95 +902,8 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
       <div class="stat"><div class="v"><span data-count="12" data-suffix="+">12+</span></div><div class="k">Partner EdTech &amp; content tools</div></div>
     </div>
 
-    <div class="card reveal pad-lg">
-      <div class="card-h"><h3>Digital platform powering the Center</h3></div>
-      <div class="sub">The Center runs on one in-house platform built around four pillars — Availability, Scheduling, Attendance and Grading. <b>All four are now complete</b>, built and verified in-house, and the consolidated <b>version&nbsp;1 has shipped</b>.</div>
-
-      <div class="dp-overall">
-        <div class="dp-big"><span data-count="100">100</span>%</div>
-        <div class="dp-overall-txt">
-          <div class="dp-overall-h">Overall platform readiness</div>
-          <div class="dp-overall-bar"><i data-w="100" style="width:100%"></i></div>
-        </div>
-        <span class="dp-badge">Version 1 · delivered</span>
-      </div>
-
-      <div class="plat" style="margin-top:18px">
-        <div class="p">
-          <div class="pi" style="background:var(--teal)">👤</div>
-          <div class="pil-h"><h4>Availability</h4><span class="pil-pct">100%</span></div>
-          <div class="pt-bar"><i data-w="100" style="width:100%; background:var(--teal)"></i></div>
-          <span class="pil-status s-done">Complete</span>
-          <div class="pd">Teacher availability and admin conflict-notifications on availability changes are both finalized and verified.</div>
-        </div>
-        <div class="p">
-          <div class="pi" style="background:var(--en)">🗓️</div>
-          <div class="pil-h"><h4>Scheduling</h4><span class="pil-pct">100%</span></div>
-          <div class="pt-bar"><i data-w="100" style="width:100%; background:var(--en)"></i></div>
-          <span class="pil-status s-done">Complete</span>
-          <div class="pd">Core scheduling and the optimized flow alongside availability are both in place and verified.</div>
-        </div>
-        <div class="p">
-          <div class="pi" style="background:var(--good)">✅</div>
-          <div class="pil-h"><h4>Attendance</h4><span class="pil-pct">100%</span></div>
-          <div class="pt-bar"><i data-w="100" style="width:100%; background:var(--good)"></i></div>
-          <span class="pil-status s-done">Complete</span>
-          <div class="pd">Fully built, checked and verified. No open items remaining.</div>
-        </div>
-        <div class="p">
-          <div class="pi" style="background:var(--brand)">📝</div>
-          <div class="pil-h"><h4>Grading</h4><span class="pil-pct">100%</span></div>
-          <div class="pt-bar"><i data-w="100" style="width:100%; background:var(--brand)"></i></div>
-          <span class="pil-status s-done">Complete</span>
-          <div class="pd">Teacher view, admin view and report extraction are all built, checked and verified.</div>
-        </div>
-      </div>
-
-      <div class="dp-road">
-        <div class="dp-road-h">July delivery timeline · all 4 sprints delivered</div>
-        <div class="dp-steps">
-          <div class="dp-step">
-            <div class="wk"><span class="wn">1</span><span class="wd">Week 1 · Jun 29</span></div>
-            <h5>Foundation &amp; flow</h5>
-            <ul><li>Attendance completed</li><li>Optimize scheduling &amp; availability flow</li><li>Grading — teacher UI done</li></ul>
-          </div>
-          <div class="dp-step">
-            <div class="wk"><span class="wn">2</span><span class="wd">Week 2 · Jul 6</span></div>
-            <h5>Records &amp; admin grading</h5>
-            <ul><li>Semester-based archiving data model</li><li>Build Grading admin view</li><li>Report extraction</li></ul>
-          </div>
-          <div class="dp-step">
-            <div class="wk"><span class="wn">3</span><span class="wd">Week 3 · Jul 13</span></div>
-            <h5>Grading &amp; safeguards</h5>
-            <ul><li>Grading finalized</li><li>Admin alerts on availability changes to prevent scheduling conflicts</li></ul>
-          </div>
-          <div class="dp-step rel">
-            <div class="wk"><span class="wn">4</span><span class="wd">Week 4 · Jul 20</span></div>
-            <h5>Version 1 release</h5>
-            <ul><li>Ship the consolidated platform</li><li>Availability · Scheduling · Attendance · Grading, all in one</li></ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="dp-next">
-        <div class="dp-next-h">Starting next academic year · planned additions</div>
-        <div class="dp-next-items">
-          <div class="dp-next-item">
-            <span class="ni">📊</span>
-            <div><h5>Dashboard integration</h5><p>Build this reporting dashboard into the ULC platform, bringing the four pillars into a single, at-a-glance overview.</p></div>
-          </div>
-          <div class="dp-next-item">
-            <span class="ni">📅</span>
-            <div><h5>Holidays calendar</h5><p>Add national and departmental holidays so scheduling and availability account for non-working days.</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="card reveal pad-lg" style="margin-bottom:18px">
-      
-
-    <div class="card-h"><h3>The digital toolkit</h3><span class="aside mono">Contracted &amp; active</span></div>
+      <div class="card-h"><h3>The digital toolkit</h3><span class="aside mono">Contracted &amp; active</span></div>
       <div class="sub">Beyond the in-house platforms, learners and teachers use a broad ecosystem of partner tools across learning, assessment, productivity, and innovation.</div>
       <div class="tool-grid">
         <div class="tool-col">
@@ -1019,7 +1025,90 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
       </div>
     </div>
 
-    
+    <div class="card reveal pad-lg">
+      <div class="card-h"><h3>Digital platform powering the Center</h3></div>
+      <div class="sub">The Center runs on one in-house platform built around four pillars — Availability, Scheduling, Attendance and Grading. <b>All four are now complete</b>, built and verified in-house, and the consolidated <b>version&nbsp;1 has shipped</b>.</div>
+
+      <div class="dp-overall">
+        <div class="dp-big"><span data-count="100">100</span>%</div>
+        <div class="dp-overall-txt">
+          <div class="dp-overall-h">Overall platform readiness</div>
+          <div class="dp-overall-bar"><i data-w="100" style="width:100%"></i></div>
+        </div>
+        <span class="dp-badge">Version 1 · delivered</span>
+      </div>
+
+      <div class="plat" style="margin-top:18px">
+        <div class="p">
+          <div class="pi" style="background:var(--teal)">👤</div>
+          <div class="pil-h"><h4>Availability</h4><span class="pil-pct">100%</span></div>
+          <div class="pt-bar"><i data-w="100" style="width:100%; background:var(--teal)"></i></div>
+          <span class="pil-status s-done">Complete</span>
+          <div class="pd">Teacher availability and admin conflict-notifications on availability changes are both finalized and verified.</div>
+        </div>
+        <div class="p">
+          <div class="pi" style="background:var(--en)">🗓️</div>
+          <div class="pil-h"><h4>Scheduling</h4><span class="pil-pct">100%</span></div>
+          <div class="pt-bar"><i data-w="100" style="width:100%; background:var(--en)"></i></div>
+          <span class="pil-status s-done">Complete</span>
+          <div class="pd">Core scheduling and the optimized flow alongside availability are both in place and verified.</div>
+        </div>
+        <div class="p">
+          <div class="pi" style="background:var(--good)">✅</div>
+          <div class="pil-h"><h4>Attendance</h4><span class="pil-pct">100%</span></div>
+          <div class="pt-bar"><i data-w="100" style="width:100%; background:var(--good)"></i></div>
+          <span class="pil-status s-done">Complete</span>
+          <div class="pd">Fully built, checked and verified. No open items remaining.</div>
+        </div>
+        <div class="p">
+          <div class="pi" style="background:var(--brand)">📝</div>
+          <div class="pil-h"><h4>Grading</h4><span class="pil-pct">100%</span></div>
+          <div class="pt-bar"><i data-w="100" style="width:100%; background:var(--brand)"></i></div>
+          <span class="pil-status s-done">Complete</span>
+          <div class="pd">Teacher view, admin view and report extraction are all built, checked and verified.</div>
+        </div>
+      </div>
+
+      <div class="dp-road">
+        <div class="dp-road-h">July delivery timeline · all 4 sprints delivered</div>
+        <div class="dp-steps">
+          <div class="dp-step">
+            <div class="wk"><span class="wn">1</span><span class="wd">Week 1 · Jun 29</span></div>
+            <h5>Foundation &amp; flow</h5>
+            <ul><li>Attendance completed</li><li>Optimize scheduling &amp; availability flow</li><li>Grading — teacher UI done</li></ul>
+          </div>
+          <div class="dp-step">
+            <div class="wk"><span class="wn">2</span><span class="wd">Week 2 · Jul 6</span></div>
+            <h5>Records &amp; admin grading</h5>
+            <ul><li>Semester-based archiving data model</li><li>Build Grading admin view</li><li>Report extraction</li></ul>
+          </div>
+          <div class="dp-step">
+            <div class="wk"><span class="wn">3</span><span class="wd">Week 3 · Jul 13</span></div>
+            <h5>Grading &amp; safeguards</h5>
+            <ul><li>Grading finalized</li><li>Admin alerts on availability changes to prevent scheduling conflicts</li></ul>
+          </div>
+          <div class="dp-step rel">
+            <div class="wk"><span class="wn">4</span><span class="wd">Week 4 · Jul 20</span></div>
+            <h5>Version 1 release</h5>
+            <ul><li>Ship the consolidated platform</li><li>Availability · Scheduling · Attendance · Grading, all in one</li></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="dp-next">
+        <div class="dp-next-h">Starting next academic year · planned additions</div>
+        <div class="dp-next-items">
+          <div class="dp-next-item">
+            <span class="ni">📊</span>
+            <div><h5>Dashboard integration</h5><p>Build this reporting dashboard into the ULC platform, bringing the four pillars into a single, at-a-glance overview.</p></div>
+          </div>
+          <div class="dp-next-item">
+            <span class="ni">📅</span>
+            <div><h5>Holidays calendar</h5><p>Add national and departmental holidays so scheduling and availability account for non-working days.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1228,10 +1317,6 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
   </div>
 </section>
 
-
-<!-- ================= WHERE WE NEED SUPPORT ================= -->
-
-
 <!-- ================= EVENTS ================= -->
 <section class="block" id="events">
   <div class="wrap">
@@ -1241,20 +1326,19 @@ footer .legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
         <h2 class="reveal">A year of language, dialogue &amp; public speaking</h2>
         <p class="reveal">The Language Center's AY 2025/2026 in full — talks, ceremonies, masterclasses, academic-writing workshops, and student-led initiatives.</p>
       </div>
-      <div class="aside reveal">27 events<br>Oct 2025 &rarr; Jul 2026</div>
+      <div class="aside reveal">26 events<br>Oct 2025 &rarr; Jul 2026</div>
     </div>
 
     <div class="card reveal pad-lg">
       <div class="timeline">
         <div class="tl-item"><div class="tl-date">25 Oct<br><span>2025</span></div><div class="tl-body"><div class="tl-txt"><h4>Info Session · Institut Français &amp; Campus France</h4><p>Study-in-France information session for students, run with Institut Français and Campus France.</p></div><div class="tl-poster"><img src="images/InfoSession.png" alt="Info Session poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
         <div class="tl-item"><div class="tl-date">05 Dec<br><span>2025</span></div><div class="tl-body"><div class="tl-txt"><h4>UM6P Language Center Envoys</h4><p>Launch of the student-ambassador network that keeps cohorts engaged across the year.</p></div><div class="tl-poster"><img src="images/Envoys.png" alt="ULC Envoys poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
-        <div class="tl-item"><div class="tl-date">06 Dec<br><span>2025</span></div><div class="tl-body"><div class="tl-txt"><h4>Beyond Words · First Edition</h4><p>Launch of the Center&rsquo;s magazine highlighting the remarkable projects, creativity, and initiatives of our teachers and students over the past year.</p></div><div class="tl-poster"><img src="images/BeyondWords.png" alt="Beyond Words poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
-        <div class="tl-item"><div class="tl-date">15 Dec<br><span>2025</span></div><div class="tl-body"><div class="tl-txt"><h4>Becoming Multiglobal</h4><p>Oxford University Press talk (Nick Cherkas) on how language shapes identity.</p></div><div class="tl-poster"><img src="images/OUP.png" alt="Becoming Multiglobal poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
+        <div class="tl-item"><div class="tl-date">15 Dec<br><span>2025</span></div><div class="tl-body"><div class="tl-txt"><h4>Becoming Multiglobal</h4><p>Oxford University Press talk (Nick Cherkas) on how language shapes identity.</p></div><div class="tl-poster-empty" aria-hidden="true"></div></div></div>
         <div class="tl-item"><div class="tl-date">18 Dec<br><span>2025</span></div><div class="tl-body"><div class="tl-txt"><h4>Arabic Day</h4><p>Celebrating the Arabic language and its rich culture.</p></div><div class="tl-poster"><img src="images/Arabic.png" alt="Arabic Day poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
         <div class="tl-item"><div class="tl-date">05 Feb<br><span>2026</span></div><div class="tl-body"><div class="tl-txt"><h4>Conversation Clubs: Stories That Shape Us</h4><p>Series · Films · Anime — a themed conversation-club session on the stories that shape us.</p></div><div class="tl-poster"><img src="images/ConversationClubs1.jpg" alt="Conversation Clubs poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
         <div class="tl-item"><div class="tl-date">12 Feb<br><span>2026</span></div><div class="tl-body"><div class="tl-txt"><h4>Ceremony of Signature · British Council</h4><p>Formal signing ceremony marking the partnership agreement with the British Council.</p></div><div class="tl-poster"><img src="images/CeremonyOfSignatureBritishCouncil.jpg" alt="Ceremony of Signature · British Council poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
         <div class="tl-item"><div class="tl-date">25 Feb<br><span>2026</span></div><div class="tl-body"><div class="tl-txt"><h4>Launch of the new Language Center website</h4><p>The redesigned public site goes live — programmes, certification procedures and news in one place.</p></div><div class="tl-poster"><img src="images/Website.png" alt="Website launch poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
-        <div class="tl-item"><div class="tl-date">11 Mar<br><span>2026</span></div><div class="tl-body"><div class="tl-txt"><h4>Conversation Clubs</h4><p>Launch of recurring student conversation clubs for practising spoken languages.</p></div><div class="tl-poster"><img src="images/ConversationClubs1.jpg" alt="Conversation Clubs poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
+        <div class="tl-item"><div class="tl-date">11 Mar<br><span>2026</span></div><div class="tl-body"><div class="tl-txt"><h4>Conversation Clubs</h4><p>Launch of recurring student conversation clubs for practising spoken languages.</p></div><div class="tl-poster-empty" aria-hidden="true"></div></div></div>
         <div class="tl-item"><div class="tl-date">15 Apr<br><span>2026</span></div><div class="tl-body"><div class="tl-txt"><h4>Le Coin Littéraire</h4><p>A literary conversation on ideas, language, and storytelling with Soufiane Mezzourh.</p></div><div class="tl-poster"><img src="images/LeCoinLitteraire.jpg" alt="Le Coin Littéraire poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
         <div class="tl-item"><div class="tl-date">17 Apr<br><span>2026</span></div><div class="tl-body"><div class="tl-txt"><h4>ULC TEDx Student Talks</h4><p>Launch of a student public-speaking &amp; leadership programme; first founding board meeting.</p></div><div class="tl-poster"><img src="images/ULCTEDxStudentTalks.jpg" alt="ULC TEDx Student Talks poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
         <div class="tl-item"><div class="tl-date">27 Apr<br><span>2026</span></div><div class="tl-body"><div class="tl-txt"><h4>Academic Writing · Workshop I</h4><p>Academic Writing as Scholarly Practice — opening session of the six-part series.</p></div><div class="tl-poster"><img src="images/Academic%20Writing%20Workshop%20Series.jpeg" alt="Academic Writing · Workshop I poster" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div>
